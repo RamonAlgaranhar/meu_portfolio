@@ -1,0 +1,40 @@
+body{
+    background-color:#19151f;
+    font-family: 'Exo 2', sans-serif;
+    color:#fff;
+}
+
+header{
+    background-color:#2e253bb2;
+}
+
+header .nav .nav-link:hover{
+    background-color: #f13800;
+}
+
+header .navbar-toggler-icon{
+    width:40px;
+    height:40px;
+    background-color:#f13800 !important;
+}
+
+.nav .nav-link.active{
+    background-color:#f13800;
+}
+
+header .navbar-toggler{
+    padding:0px;
+}
+
+.nav .nav-link{
+    color:#fff;
+}
+
+header .navbar-brand:hover{
+    color:#f13800;
+}
+
+.text-colored,
+header .navbar-brand{
+    color:#f13800;
+}
