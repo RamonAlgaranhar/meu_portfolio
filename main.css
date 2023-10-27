@@ -55,6 +55,10 @@ header .navbar-brand{
     color:#f13800;
 }
 
+#projects .carousel .carousel-item{
+    opacity:0.5;
+    height:500px;
+}
 
 @media (max-width:767px){
     .social-links li{

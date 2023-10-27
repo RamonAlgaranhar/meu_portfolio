@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header class="navbar navbar-expand-lg">
+    <header class="navbar navbar-expand-lg" id="cabecalho">
         <div class="container">
             <h3 class="navbar-brand fw-bold m-0">DEV</h3>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
@@ -22,13 +22,13 @@
             <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item text-center fw-bold">
-                        <a class="nav-link active" href="./index.html">Home</a>
+                        <a class="nav-link active" href="#about">About</a>
                     </li>
                     <li class="nav-item text-center fw-bold">
-                        <a class="nav-link" href="./about/index.html">About</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item text-center fw-bold">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item text-center fw-bold">
                         <a class="nav-link" href="#">Contact</a>
@@ -38,46 +38,81 @@
         </div>
     </header>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 pe-5 d-flex flex-column justify-content-center">
-                    <div class="row">
-                        <h3 class="fs-2">Olá, sou o <span class="text-colored fw-bold">Ramon</span>.</h3>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 pe-5 d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <h3 class="fs-2">Olá, sou o <span class="text-colored fw-bold">Ramon</span>.</h3>
+                        </div>
+                        <div class="row mt-3 mb-2">
+                            <p class="fs-5 text-justify">
+                                Como desenvolvedor front-end, minha paixão é criar interfaces de usuário incríveis que cativam os usuários e proporcionam experiências digitais excepcionais.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <ul class="social-links">
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-linkedin text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4 ms-2 me-2">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="row mt-3 mb-2">
-                        <p class="fs-5 text-justify">
-                            Como desenvolvedor front-end, minha paixão é criar interfaces de usuário incríveis que cativam os usuários e proporcionam experiências digitais excepcionais.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <ul class="social-links">
-                            <li class="fs-4">
-                                <a href="#">
-                                    <i class="bi bi-linkedin text-colored"></i>
-                                </a>
-                            </li>
-                            <li class="fs-4 ms-2 me-2">
-                                <a href="#">
-                                    <i class="bi bi-instagram text-colored"></i>
-                                </a>
-                            </li>
-                            <li class="fs-4">
-                                <a href="#">
-                                    <i class="bi bi-facebook text-colored"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex flex-column justify-content-center">
-                    <div class="image">
-                        <img class="d-block w-100" src="./imagens/8343a7ab-0cf8-4498-88d5-aa66878e7882__1_-removebg-preview.png"/>
+                    <div class="col-md-4 d-flex flex-column justify-content-center">
+                        <div class="image">
+                            <img class="d-block w-100" src="./imagens/8343a7ab-0cf8-4498-88d5-aa66878e7882__1_-removebg-preview.png"/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <section id="skills">
+
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="4000" class="carousel-item active">
+                            <img class="d-block w-100" src="./imagens/agenda_para_contatos-1.png"/>
+                        </div>
+                        <div data-bs-interval="4000" class="carousel-item">
+                            <img class="d-block w-100" src="./imagens/calculadora_de_medias-1.png"/>
+                        </div>
+                        <div data-bs-interval="4000" class="carousel-item">
+                            <img class="d-block w-100" src="./imagens/galeria_de_fotos-1.png"/>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#carousel" data-bs-slide-to="0" class="active" type="button"></button>
+                        <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
+                        <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
