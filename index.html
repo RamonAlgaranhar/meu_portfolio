@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header class="navbar navbar-expand-lg" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top" id="cabecalho">
         <div class="container">
             <h3 class="navbar-brand fw-bold m-0">DEV</h3>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
@@ -22,23 +22,23 @@
             <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item text-center fw-bold">
-                        <a class="nav-link active" href="#about">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item text-center fw-bold">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item text-center fw-bold">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item text-center fw-bold">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <section id="about">
             <div class="container">
                 <div class="row">
@@ -80,36 +80,213 @@
             </div>
         </section>
     
-        <section id="skills">
-
-        </section>
-
-        <section id="projects">
+        <section id="skills" class="pt-4 pb-4">
             <div class="container">
-                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div data-bs-interval="4000" class="carousel-item active">
-                            <img class="d-block w-100" src="./imagens/agenda_para_contatos-1.png"/>
+                <div class="row pb-3">
+                    <h3 class="fs-3 text-center">Minhas <span class="text-colored fw-bold">Skills</span></h3>
+                </div>
+                <div class="row">
+                    <aside class="col-md-3">
+                        <nav class="nav nav-pills flex-column">
+                            <button data-bs-toggle="tab" data-bs-target="#html" class="nav-link fw-bold text-start active" type="button">HTML</button>
+                            <button data-bs-toggle="tab" data-bs-target="#css" class="nav-link fw-bold text-start" type="button">CSS</button>
+                            <button data-bs-toggle="tab" data-bs-target="#javascript_jquery" class="nav-link fw-bold text-start" type="button">JavaScript/Jquery</button>
+                            <button data-bs-toggle="tab" data-bs-target="#node" class="nav-link fw-bold text-start" type="button">Node.js</button>
+                            <button data-bs-toggle="tab" data-bs-target="#bootstrap" class="nav-link fw-bold text-start" type="button">Bootstrap</button>
+                            <button data-bs-toggle="tab" data-bs-target="#php" class="nav-link fw-bold text-start" type="button">PHP</button>
+                            <button data-bs-toggle="tab" data-bs-target="#mysql" class="nav-link fw-bold text-start" type="button">MySQL</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-9 d-flex flex-column justify-content-center">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="html">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/skills/HTML_logo.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sed asperiores beatae eius officia, tempora corporis voluptatibus, nulla soluta est sapiente dolorum provident inventore minus animi fugiat. Quas, asperiores quia!</p>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="tab-pane" id="css">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/skills/CSS_logo.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sed asperiores beatae eius officia, tempora corporis voluptatibus, nulla soluta est sapiente dolorum provident inventore minus animi fugiat. Quas, asperiores quia!</p>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="tab-pane" id="javascript_jquery">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/skills/JavaScript_logo.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sed asperiores beatae eius officia, tempora corporis voluptatibus, nulla soluta est sapiente dolorum provident inventore minus animi fugiat. Quas, asperiores quia!</p>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="tab-pane" id="node">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/skills/nodejs_logo.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sed asperiores beatae eius officia, tempora corporis voluptatibus, nulla soluta est sapiente dolorum provident inventore minus animi fugiat. Quas, asperiores quia!</p>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="tab-pane" id="bootstrap">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/skills/Bootstrap_logo.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sed asperiores beatae eius officia, tempora corporis voluptatibus, nulla soluta est sapiente dolorum provident inventore minus animi fugiat. Quas, asperiores quia!</p>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="tab-pane" id="php">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/skills/PHP_logo.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sed asperiores beatae eius officia, tempora corporis voluptatibus, nulla soluta est sapiente dolorum provident inventore minus animi fugiat. Quas, asperiores quia!</p>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="tab-pane" id="mysql">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./imagens/skills/mysql_logo.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sed asperiores beatae eius officia, tempora corporis voluptatibus, nulla soluta est sapiente dolorum provident inventore minus animi fugiat. Quas, asperiores quia!</p>
+                                    </div>
+                                </div>   
+                            </div>
                         </div>
-                        <div data-bs-interval="4000" class="carousel-item">
-                            <img class="d-block w-100" src="./imagens/calculadora_de_medias-1.png"/>
-                        </div>
-                        <div data-bs-interval="4000" class="carousel-item">
-                            <img class="d-block w-100" src="./imagens/galeria_de_fotos-1.png"/>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                    <div class="carousel-indicators">
-                        <button data-bs-target="#carousel" data-bs-slide-to="0" class="active" type="button"></button>
-                        <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
-                        <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="projects" class="pt-4 pb-4">
+            <div class="container">
+                <div class="row pb-3">
+                    <h3 class="fs-3 text-center">Meus <span class="text-colored fw-bold">Projetos</span></h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div data-bs-interval="2500" class="carousel-item active">
+                                    <img class="d-block w-100" src="./imagens/projects/site_de_vendas_de_carros-1.png"/>
+                                    <div class="carousel-caption pb-5">
+                                        <h3 class="fs-4">Site vendas de carros</h3>
+                                        <a href="https://site-venda-de-carros.vercel.app/" target="_blank">
+                                            <button class="btn btn-primary">Acessar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="2500" class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/projects/portal_de_noticias-1.png"/>
+                                    <div class="carousel-caption pb-5">
+                                        <h3 class="fs-4">Site portal de notícias</h3>
+                                        <a href="https://site-de-noticias-seven.vercel.app/" target="_blank">
+                                            <button class="btn btn-primary">Acessar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="2500" class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/projects/galeria_de_fotos-1.png"/>
+                                    <div class="carousel-caption pb-5">
+                                        <h3 class="fs-4">Galeria de fotos</h3>
+                                        <a href="https://galeria-de-fotos-bay-gamma.vercel.app/" target="_blank">
+                                            <button class="btn btn-primary">Acessar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="2500" class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/projects/lista_de_tarefas-1.png"/>
+                                    <div class="carousel-caption pb-5">
+                                        <h3 class="fs-4">Lista de tarefas</h3>
+                                        <a href="https://lista-de-tarefas-blond-chi.vercel.app/" target="_blank">
+                                            <button class="btn btn-primary">Acessar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="2500" class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/projects/calculadora_de_medias-1.png"/>
+                                    <div class="carousel-caption pb-5">
+                                        <h3 class="fs-4">Calculadora de média de notas</h3>
+                                        <a href="https://calculadora-media-de-notas.vercel.app/" target="_blank">
+                                            <button class="btn btn-primary">Acessar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="2500" class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/projects/site_de_restaurante-1.png"/>
+                                    <div class="carousel-caption pb-5">
+                                        <h3 class="fs-4">Site de restaurante</h3>
+                                        <a href="https://site-restaurante-theta.vercel.app/" target="_blank">
+                                            <button class="btn btn-primary">Acessar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="2500" class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/projects/agenda_para_contatos-1.png"/>
+                                    <div class="carousel-caption pb-5">
+                                        <h3 class="fs-4">Agenda para contatos</h3>
+                                        <a href="https://ramon-agenda-para-contatos.vercel.app/" target="_blank">
+                                            <button class="btn btn-primary">Acessar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="2500" class="carousel-item">
+                                    <img class="d-block w-100" src="./imagens/projects/site_de_vendas_de_produtos-1.png"/>
+                                    <div class="carousel-caption pb-5">
+                                        <h3 class="fs-4">Site de vendas de produtos</h3>
+                                        <a href="https://site-venda-de-produtos.vercel.app/" target="_blank">
+                                            <button class="btn btn-primary">Acessar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button data-bs-target="#carousel" data-bs-slide-to="0" class="active" type="button"></button>
+                                <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
+                                <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
+                                <button data-bs-target="#carousel" data-bs-slide-to="3" type="button"></button>
+                                <button data-bs-target="#carousel" data-bs-slide-to="4" type="button"></button>
+                                <button data-bs-target="#carousel" data-bs-slide-to="5" type="button"></button>
+                                <button data-bs-target="#carousel" data-bs-slide-to="6" type="button"></button>
+                                <button data-bs-target="#carousel" data-bs-slide-to="7" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-justify m-0">
+                            Desenvolvi um portfólio diversificado de projetos como programador front-end, demonstrando minha proficiência em HTML, CSS, JavaScript/jQuery e Bootstrap. Isso inclui a criação de alguns websites responsivos de e-commerces com recursos interativos, sites de notícias e alguns projetos de listagem e calculadora. Além disso, desenvolvi meu próprio portfólio online, destacando meu compromisso com designs elegantes e responsivos, bem como interações envolventes com o uso de JavaScript/jQuery. Cada projeto destaca minha capacidade de criar experiências de usuário atraentes e funcionais no ambiente front-end.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+
             </div>
         </section>
     </div>

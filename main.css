@@ -6,6 +6,7 @@ body{
 
 header{
     background-color:#2e253bb2;
+    backdrop-filter:blur(5px);
 }
 
 header .nav .nav-link:hover{
@@ -43,7 +44,7 @@ header .navbar-brand:hover{
     text-decoration:none;
 }
 
-section .image{
+#about .image{
     width:100%;
     height:100%;
     background-color:#f13800;
@@ -55,9 +56,30 @@ header .navbar-brand{
     color:#f13800;
 }
 
-#projects .carousel .carousel-item{
-    opacity:0.5;
-    height:500px;
+#skills{
+    background-color:#0b0611;
+}
+
+#projects{
+    background-color:#372d47;
+}
+
+#projects .carousel .carousel-item img{
+    opacity:0.4;
+}
+
+.carousel .carousel-caption a{
+    text-decoration:none;
+}
+
+.carousel .carousel-caption .btn.btn-primary{
+    background-color:#f13800;
+    border-color:#f13800;
+}
+
+.carousel .carousel-caption .btn.btn-primary:hover{
+    background-color:#dd3400;
+    border-color:#dd3400;
 }
 
 @media (max-width:767px){
