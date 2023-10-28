@@ -72,14 +72,21 @@ header .navbar-brand{
     text-decoration:none;
 }
 
-.carousel .carousel-caption .btn.btn-primary{
+.carousel .carousel-caption .btn.btn-primary,
+#contact .btn.btn-primary{
     background-color:#f13800;
     border-color:#f13800;
 }
 
-.carousel .carousel-caption .btn.btn-primary:hover{
+.carousel .carousel-caption .btn.btn-primary:hover,
+#contact .btn.btn-primary:hover{
     background-color:#dd3400;
     border-color:#dd3400;
+}
+
+#contact .card{
+    background-color:#372d47;
+    color:#fff;
 }
 
 @media (max-width:767px){
