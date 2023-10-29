@@ -96,4 +96,21 @@ header .navbar-brand{
     section{
         padding-top:20px;
     }
+    #skills .tab-content .tab-pane.active .col-md-3{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    } 
+    #skills .tab-content .tab-pane.active img{
+        width:50%!important;
+    }
+    #projects .carousel{
+        margin-bottom:20px;
+    }
+    #contact .col-md-4{
+        margin-top:20px;
+    }
+    #contact .col-md-2{
+        margin-bottom:20px;
+    }
 }
