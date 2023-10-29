@@ -6,7 +6,7 @@ body{
 
 header{
     background-color:#2e253bb2;
-    backdrop-filter:blur(5px);
+    backdrop-filter:blur(10px);
 }
 
 header .nav .nav-link:hover{
@@ -109,6 +109,10 @@ header .navbar-brand{
     }
     #contact .col-md-4{
         margin-top:20px;
+    }
+    #contact .col-md-7 h4{
+        text-decoration:none;
+        color:#fff;
     }
     #contact .col-md-2{
         margin-bottom:20px;
